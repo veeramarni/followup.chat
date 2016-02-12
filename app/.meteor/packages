@@ -17,7 +17,6 @@ es5-shim                # ECMAScript 5 compatibility for older browsers.
 ecmascript              # Enable ECMAScript2015+ syntax in app code
 
 react
-veeramarni:ionic-css
 fourseven:scss
 momentjs:moment
 veeramarni:accounts-phone
@@ -35,3 +34,12 @@ meteorhacks:npm
 
 npm-container
 cosmos:browserify
+less
+twbs:bootstrap
+veeramarni:ionicons-less
+veeramarni:touchstonejs
+universe:modules
+followupchat:lib
+veeramarni:logger
+veeramarni:common
+accounts-ui

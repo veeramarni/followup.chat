@@ -1,2 +1,3 @@
-Touchstone = require("touchstonejs");
-Container = require("react-container");
+Sentry = require('react-sentry');
+Tappable = require('react-timers');
+

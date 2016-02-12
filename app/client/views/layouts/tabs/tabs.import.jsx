@@ -19,13 +19,11 @@ TabNav = React.createClass({
     render() {
         let appWrapperClassName = 'app-wrapper device--' + (window.device || {}).platform;
         return (
-            <div className={appWrapperClassName}>
-                <div className="device-silhouette">
-                    <ViewManager name="app" defaultView="main">
-                        <View name="main" component={MainViewController}/>
-                    </ViewManager>
-                </div>
-            </div>
+
+            <ViewManager name="app" defaultView="main">
+                <View name="main" component={MainViewController}/>
+            </ViewManager>
+
         )
     }
 });
@@ -38,8 +36,18 @@ var MainViewController = React.createClass({
     render(){
         return (
             <Container>
-                <UI.NavigationBar name="main" />
+                <ViewManager name="main" defaultView="tabs">
+                    <View name="tabs" component={TabViewController}/>
+                </ViewManager>
             </Container>
         )
     }
 });
+
+
+// Tab Controller
+// --------------
+
+var TabViewController = React.creatClass({
+
+})
