@@ -52,7 +52,7 @@ ecmascript@0.1.6
 ecmascript-runtime@0.2.6
 ejson@1.0.7
 email@1.0.8
-emgee:libphonenumber@0.1.0
+emgee:libphonenumber@1.0.7
 es5-shim@4.1.14
 fastclick@1.0.7
 followupchat:lib@0.0.1

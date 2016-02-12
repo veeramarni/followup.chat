@@ -74,7 +74,7 @@ export default React.createClass({
 
     getInitialState () {
         return {
-            defaultView: Meteor.currentUser() ? 'main' : 'login'
+            defaultView: Meteor.userId() ? 'main' : 'login'
         };
     },
 
