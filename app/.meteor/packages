@@ -16,7 +16,6 @@ standard-minifiers      # JS/CSS minifiers run for production mode
 es5-shim                # ECMAScript 5 compatibility for older browsers.
 ecmascript              # Enable ECMAScript2015+ syntax in app code
 
-react
 fourseven:scss
 momentjs:moment
 veeramarni:accounts-phone
@@ -27,19 +26,20 @@ cfs:standard-packages
 cfs:gridfs
 cfs:s3
 cfs:graphicsmagick
-reactrouter:react-router
 
 meteorhacks:npm
 
 
-npm-container
-cosmos:browserify
 less
 twbs:bootstrap
-veeramarni:ionicons-less
 veeramarni:touchstonejs
 universe:modules
 followupchat:lib
 veeramarni:logger
 veeramarni:common
 accounts-ui
+raix:eventemitter
+velocityjs:velocityjs
+followupchat:app-deps
+react
+veeramarni:utilities-react

@@ -1,0 +1,17 @@
+{
+  "packages": {
+    "react-container": "0.3.1",
+    "react-sentry": "0.4.0",
+    "react-blink": "1.0.2",
+    "classnames": "2.1.1",
+    "blacklist": "1.1.2",
+    "react-timers": "3.1.0",
+    "react-tappable": "0.5.1",
+    "touchstonejs": "0.7.3",
+    "moment": "2.10.3"
+  },
+  "system": {
+    // In bundle "react" will be replaced by universe:modules dependency.
+    "dependencies": ["react", "react-dom", "react-addons-css-transition-group"]
+  }
+}

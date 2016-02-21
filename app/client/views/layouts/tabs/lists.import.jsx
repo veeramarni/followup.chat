@@ -1,4 +1,8 @@
-const { Link, UI } = Touchstone;
+import React from '{followupchat:app-deps}/packages/react';
+import {
+Link, UI
+} from '{followupchat:app-deps}/packages/touchstonejs';
+//const { Link, UI } = Touchstone;
 
 
 

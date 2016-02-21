@@ -1,10 +1,18 @@
-const {
-    Container,
+import React from '{followupchat:app-deps}/packages/react';
+import {
     createApp,
+    Container,
     UI,
-    View,
-    ViewManager
-    } = Touchstone;
+    ViewManager,
+    View
+} from '{followupchat:app-deps}/packages/touchstonejs';
+//const {
+//    Container,
+//    createApp,
+//    UI,
+//    View,
+//    ViewManager
+//    } = Touchstone;
 
 var lastSelectedTab = 'lists'
 TabNav = React.createClass({

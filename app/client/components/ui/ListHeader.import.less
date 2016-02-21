@@ -1,0 +1,24 @@
+
+// Headers
+// -----------------------
+
+.ListHeader {
+  .retina-1px-border-top-and-bottom(rgba(0, 0, 0, 0.3));
+  background-color: darken(@body-bg, 3%);
+  font-size: @font-size-xs;
+  font-weight: 500;
+  line-height: 2.4;
+  padding-left: @font-size-base;
+  text-transform: uppercase;
+  z-index: 1;
+
+  .ListItem + & {
+    margin-top: -2px;
+  }
+}
+
+.ListHeader--sticky {
+  padding-top: 1px;
+  position: -webkit-sticky;
+  top: -1px;
+}

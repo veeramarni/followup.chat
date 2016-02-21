@@ -1,13 +1,15 @@
-const {
+import {
     createApp,
     Container,
     NavigationBar,
     Tabs,
     ViewManager,
     View
-    } = Touchstone;
+    } from '{followupchat:app-deps}/packages/touchstonejs';
 
 import Onboard from './views/onboard/onboard';
+import about from './views/about/about';
+import Sentry from '{followupchat:app-deps}/packages/react-sentry';
 
 function blockBodyTouchMove(e) {
     var currentTarget = e.target;
@@ -74,7 +76,7 @@ export default React.createClass({
 
     getInitialState () {
         return {
-            defaultView: Meteor.userId() ? 'main' : 'login'
+            defaultView: Meteor.userId() ? 'login' : 'main'
         };
     },
 
@@ -90,13 +92,80 @@ export default React.createClass({
         const appWrapperClassName = 'app-wrapper device--' + bjse.client.deviceType;
 
         return (
-            <div className={appWrapperClassName}>
-                <div className="device-silhouette">
-                    <ViewManager ref="vm" name="app" defaultView={this.state.defaultView}>
-                        <View name="onboarding" component={Onboard}/>
-                    </ViewManager>
-                </div>
-            </div>
+            <ViewManager ref="vm" name="app" defaultView={this.state.defaultView}>
+                <View name="main" component={MainViewController}/>
+            </ViewManager>
+        )
+    }
+});
+
+var MainViewController = React.createClass({
+    render () {
+        return (
+            <Container>
+                <NavigationBar name="main"/>
+                <ViewManager name="main" defaultView="tabs">
+                    <View name="tabs" component={TabViewController}/>
+                </ViewManager>
+            </Container>
+        )
+    }
+});
+
+var TabViewController = React.createClass({
+
+    mixins: [Sentry()],
+
+    componentDidMount() {
+
+        this.watch(document, 'backbutton', () => {
+            var body = document.getElementsByTagName('body')[0];
+            body.classList.remove('android-menu-is-open');
+        });
+    },
+
+    onViewChange (nextView) {
+        lastSelectedTab = nextView;
+
+        this.setState({
+            selectedTab: nextView
+        });
+    },
+
+    selectTab (tab) {
+        var viewProps;
+
+        this.refs.vm.transitionTo(tab.value, {
+            viewProps: viewProps
+        })
+    },
+
+    updatedTabState (settings) {
+    },
+
+    render () {
+        var selectedTab = this.state.selectedTab;
+        if (selectedTab === 'me' || selectedTab === 'me-edit') {
+            selectedTab = 'me';
+        }
+
+        return (
+            <Container>
+                <ViewManager ref="vm" name="tabs" defaultView='about' onViewChange={this.onViewChange}>
+                    <View name="about" component={about}/>
+                    <View name="schedule" component={schedule}/>
+                </ViewManager>
+                <Tabs.Navigator value={selectedTab} onChange={this.selectTab}>
+                    <Tabs.Tab value="schedule">
+                        <span className="Tabs-Icon Tabs-Icon--schedule"/>
+                        <Tabs.Label>Schedule</Tabs.Label>
+                    </Tabs.Tab>
+                    <Tabs.Tab value="about">
+                        <span className="Tabs-Icon Tabs-Icon--about"/>
+                        <Tabs.Label>About</Tabs.Label>
+                    </Tabs.Tab>
+                </Tabs.Navigator>
+            </Container>
         )
     }
 });

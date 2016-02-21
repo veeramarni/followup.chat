@@ -1,5 +1,5 @@
 Package.describe({
-  name: 'followupchat:lib',
+  name: 'followupchat:app-deps',
   version: '0.0.1',
   // Brief, one-line summary of the package.
   summary: '',
@@ -13,21 +13,7 @@ Package.describe({
 Package.onUse(function(api) {
   api.versionsFrom('1.2.1');
   api.use('ecmascript');
-  api.use('aldeed:collection2');
-  api.use('veeramarni:logger');
-  api.use('veeramarni:common');
-  api.use('followupchat:version');
-  api.use('veeramarni:touchstonejs');
-
-  api.addFiles('lib/core.js');
-  api.addFiles('lib/models/_Base.js');
-
-  // SERVER
-
-  // VERSION
-  api.addFiles('followupchat.info');
-
-  // EXPORT
-  api.export('FollowupChat');
+  api.use('universe:modules-npm@0.9.1');
+  api.addFiles('packages.npm.json');
 });
 

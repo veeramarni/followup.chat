@@ -1,0 +1,19 @@
+{
+  "eventFacebookPageId": "1541044122821917",
+  "eventFacebook": "ReactEurope",
+  "eventTwitter": "ReactEurope",
+  "eventMapsAddress": "327+Rue+de+Charenton,+75012+Paris,+France",
+  "eventAddress": "327, rue de Charenton 75012 Paris",
+  "eventPlaceName": "Espace Charenton",
+  "name": "App and Event Settings",
+  "aboutHeading": "H1",
+  "aboutLogo": "./img/thinkmill-logo_white.svg",
+  "showResendEmail": false,
+  "registrationsOpen": false,
+  "refreshInterval": 60000,
+  "aboutContent": "<p>\r\n  This app was developed with React.js and TouchstoneJS, and packaged using Cordova. We also used KeystoneJS to \r\n    build the back-end API and implement content management across the board. And both the app and the api \r\n    have been open-sourced so you can learn how we did it, and build on our work to create your own apps.\r\n</p>",
+  "aboutButtonLabel": "Learn more",
+  "aboutButtonLink": "http://thinkmill.com.au",
+  "showAboutView": false,
+  "_id": "55826a3ba982d103008c4b38"
+}

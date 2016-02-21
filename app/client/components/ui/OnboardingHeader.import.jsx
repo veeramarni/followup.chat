@@ -1,6 +1,5 @@
-
-const { Container } = Touchstone;
-
+//const { Container } = Touchstone;
+import {Container} from '{followupchat:app-deps}/packages/touchstonejs';
 export default React.createClass({
     getInitialState () {
         return {};
