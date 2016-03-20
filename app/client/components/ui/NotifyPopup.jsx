@@ -1,4 +1,4 @@
-import { UI} from '{followupchat:app-deps}/packages/touchstonejs';
+import { UI} from 'touchstonejs';
 
 
 export default React.createClass({

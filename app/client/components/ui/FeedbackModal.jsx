@@ -1,8 +1,7 @@
-//const ReactCSSTransitionGroup = React.addons.CSSTransitionGroup;
 import ReactCSSTransitionGroup from 'react-addons-css-transition-group';
 
-import classNames from '{followupchat:app-deps}/packages/classnames';
-import Sentry from '{followupchat:app-deps}/packages/react-sentry';
+import classNames from 'classnames';
+import Sentry from 'react-sentry';
 
 
 

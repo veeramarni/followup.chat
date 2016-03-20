@@ -1,5 +1,5 @@
-import classNames from '{followupchat:app-deps}/packages/classnames';
-import blacklist from '{followupchat:app-deps}/packages/blacklist';
+import classNames from 'classnames';
+import blacklist from 'blacklist';
 
 export  default React.createClass({
     displayName: 'ListHeader',
