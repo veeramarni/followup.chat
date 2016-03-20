@@ -14,7 +14,6 @@ tracker                 # Meteor's client-side reactive programming library
 
 standard-minifiers      # JS/CSS minifiers run for production mode
 es5-shim                # ECMAScript 5 compatibility for older browsers.
-ecmascript              # Enable ECMAScript2015+ syntax in app code
 
 fourseven:scss
 momentjs:moment
@@ -27,26 +26,26 @@ cfs:gridfs
 cfs:s3
 cfs:graphicsmagick
 
-meteorhacks:npm
 
 
 less
 twbs:bootstrap
-veeramarni:touchstonejs
-universe:modules
 followupchat:lib
 veeramarni:logger
 veeramarni:common
 accounts-ui
 raix:eventemitter
 velocityjs:velocityjs
-followupchat:app-deps
-react
-veeramarni:utilities-react
 
 
-npm-container
 followupchat:version
 veeramarni:country-codes
 veeramarni:ionic-less
 ground:db@1.0.0-alpha.3
+webpack:webpack
+webpack:react
+webpack:less
+webpack:sass
+react-runtime
+react-meteor-data
+webpack:assets

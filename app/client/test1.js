@@ -25,7 +25,7 @@ export default React.createClass({
         return (
             <div>
                 <button className="btn btn-primary" onClick={this.clickHandler} >button</button>
-                <NotifyPopup subTitle="testing" visible={this.state.popup.visible} type="alert" onChange={this.handleNotifyChange}/>
+                <NotifyPopup template="test" subTitle="testing" template="test" visible={this.state.popup.visible} type="alert" onChange={this.handleNotifyChange}/>
             </div>
         )
     }
