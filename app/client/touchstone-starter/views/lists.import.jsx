@@ -12,9 +12,12 @@ export default React.createClass({
             }
         }
     },
+
     render() {
+        let {country} = this.props;
         return (
             <Container scrollable >
+                <div>{ country ? country.name : 'null'} </div>
                 <UI.Group>
                     <UI.GroupHeader>Lists</UI.GroupHeader>
                     <UI.GroupBody>

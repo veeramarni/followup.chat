@@ -7,6 +7,7 @@ import TransistionComp from './views/transitions';
 
 import ListSimple from './views/list-simple';
 import ListComplex from './views/list-complex';
+import ListDetails from './views/list-details';
 
 export default React.createClass({
     mixins: [createApp()],
@@ -82,6 +83,7 @@ var TabViewController = React.createClass({
                     <View name="transitions" component={TransistionComp}/>
                     <View name="list-simple" component={ListSimple}/>
                     <View name="list-complex" component={ListComplex}/>
+                    <View name="list-details" component={ListDetails}/>
                 </ViewManager>
                 <UI.Tabs.Navigator >
                     <UI.Tabs.Tab onTap={this.onSelectTab.bind(this, 'lists')} selected={selectedTabSpan === 'lists'}>

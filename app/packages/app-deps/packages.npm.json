@@ -1,17 +1,43 @@
 {
+  // if you noticing universe:npm is loading wrong version, than manually clean the files shown in generated js file.
+  // For example, it will be /var/folders/y5/5sbk71bx0z19m_zr5fwg_4gh0000gn/T/universe-npm/
+
   "packages": {
+    "react-tappable": "0.7.2",
+    "touchstonejs": "0.7.3",
+    "moment": "2.10.3",
     "react-container": "0.3.1",
     "react-sentry": "0.4.0",
     "react-blink": "1.0.2",
-    "classnames": "2.1.1",
+    "classnames": "2.2.3",
     "blacklist": "1.1.2",
-    "react-timers": "3.1.0",
-    "react-tappable": "0.5.1",
-    "touchstonejs": "0.7.3",
-    "moment": "2.10.3"
+    "react-timers": "5.0.0",
+    "material-ui": "0.14.4",
+    "react-tap-event-plugin": "0.2.2",
+    // dependencies for reactionic
+    "lodash": "4.5.1",
+    "history": "1.17.0",
+    "react-router": "1.0.2",
+    "react-slick": "0.10.0",
+    "react-static-container": "1.0.0",
+    "snapjs": "1.2.1",
+    "reactionic": "0.1.4"
   },
   "system": {
     // In bundle "react" will be replaced by universe:modules dependency.
-    "dependencies": ["react", "react-dom", "react-addons-css-transition-group"]
-  }
+    "dependencies": [
+      "react",
+      "react-dom",
+      "react-addons-css-transition-group",
+      "react-addons-transition-group",
+      "react-addons-create-fragment",
+      "react-addons-linked-state-mixin",
+      "react-addons-test-utils",
+      "react-addons-update",
+      "react-addons-pure-render-mixin",
+      "react-addons-perf"
+    ]
+  },
+  "entries": [
+  ]
 }

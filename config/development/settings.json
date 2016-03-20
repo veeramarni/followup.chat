@@ -1,6 +1,38 @@
 {
   "public": {
+    "S3": {
+      "AWSAccessKeyId": "not-really-my-key",
+      "AWSSecretAccessKey": "not-really-my-secret",
+      "AWSBucket": "not-really-my-bucket"
+    },
+    "recordsPerPage": "25",
+    "push": {
+      "badge": true,
+      "sound": true,
+      "alert": true,
+      "vibrate": true
+    }
   },
-
-  "sample": "value"
+  "loglevel": "debug",
+  "private": {
+    "S3": {
+      "AWSAccessKeyId": "AKIAJ57EDYJXBLG2BGRA",
+      "AWSSecretAccessKey": "Vd3aGx7qMc6u16GSivyX7ohweQnjF73eZ8U4oj1U",
+      "AWSBucket": "smartidog"
+    },
+    "TWILIO": {
+      "FROM": "+14049904995",
+      "SID": "AC6a2e5f7f2c3d1eac2296298d129997f9",
+      "TOKEN": "a7a33bfe22dcf1e0dcd700ed4e06cfd5"
+    },
+    "ACCOUNTS_PHONE": {
+      "ADMIN_NUMBERS": [
+        "123456789",
+        "987654321"
+      ],
+      "MASTER_CODE": "1234",
+      "RETRIES": 20,
+      "SEND_SMS": false
+    }
+  }
 }

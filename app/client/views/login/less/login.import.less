@@ -1,0 +1,56 @@
+//
+// Login
+// ======================
+.View--login {
+  background-color: @app-secondary;
+}
+
+.Login {
+  text-align: left;
+  padding: 1em;
+  .Item__inner::after {
+    bottom: auto !important;
+
+  }
+
+  .Item {
+    padding: 0;
+  }
+  .Item--has-disclosure-arrow {
+    color: @app-primary;
+  }
+  .Item--has-disclosure-arrow::after {
+    .pseudo-ionicon(#ccc, @ionicon-var-chevron-down, @ionicons-size-base);
+    line-height: 2;
+  }
+}
+
+
+.Login__country {
+}
+
+.Login__input-group {
+  font-size: 18px;
+}
+
+.Login__input-group-addon {
+  padding: 6px 18px;
+  font-size: inherit;
+  border: none;
+}
+// headings
+
+.Login__heading {
+  font-size: @font-size-xxl;
+  font-weight: @font-weight-thin;
+  margin-top: 1em;
+}
+
+.Login__subheading {
+  font-size: @font-size-sm;
+  margin-bottom: 2em;
+  margin-top: 1em;
+}
+
+
+

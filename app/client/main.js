@@ -1,3 +1,2 @@
-System.import('/client/test').then(() => {
-    // app is up and ready
+System.import('/client/startup').then(() => {
 });
