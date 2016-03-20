@@ -1,1 +1,1 @@
-import './imports/publish';
+import './publish/publish';

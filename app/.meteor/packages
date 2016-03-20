@@ -40,7 +40,6 @@ velocityjs:velocityjs
 
 followupchat:version
 veeramarni:country-codes
-veeramarni:ionic-less
 ground:db@1.0.0-alpha.3
 webpack:webpack
 webpack:react
