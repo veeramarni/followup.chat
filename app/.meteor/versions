@@ -58,6 +58,7 @@ emgee:libphonenumber@1.0.7
 es5-shim@4.1.14
 fastclick@1.0.7
 followupchat:lib@0.0.1
+followupchat:ui@0.0.1
 followupchat:version@0.0.1
 fourseven:scss@3.4.1
 geojson-utils@1.0.4
@@ -141,7 +142,7 @@ webapp@1.2.3
 webapp-hashing@1.0.5
 webpack:assets@1.0.0
 webpack:core-config@1.0.0
-webpack:css@1.0.1
+webpack:css@1.1.0
 webpack:less@1.0.0
 webpack:npmworkaround@1.0.0
 webpack:react@1.1.3
