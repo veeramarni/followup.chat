@@ -18,7 +18,6 @@ Package.onUse(function(api) {
   api.use('veeramarni:common');
   api.use('followupchat:version');
   api.use('veeramarni:touchstonejs');
-
   api.addFiles('lib/core.js');
   api.addFiles('lib/models/_Base.js');
 

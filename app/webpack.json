@@ -1,0 +1,3 @@
+{
+  "sassResources": ["./node_modules/reactionic/src/ionic-scss/_variables.scss","./node_modules/reactionic/src/ionic-scss/_mixins.scss"]
+}
