@@ -1,6 +1,7 @@
 import classnames from 'classnames';
 
-import 'reactionic/src/ionic-scss/_bar.scss';
+//import 'reactionic/src/ionic-scss/_ionic.scss';
+//import 'reactionic/src/styles/_reactionic.scss';
 
 var FooterBar = React.createClass({
     propTypes: {

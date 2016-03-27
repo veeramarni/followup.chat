@@ -1,4 +1,5 @@
 import classnames from 'classnames';
+import React from 'react';
 
 import 'reactionic/src/ionic-scss/_bar.scss';
 

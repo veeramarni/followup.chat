@@ -3,7 +3,7 @@ import Container from 'react-container';
 import NotifyPopup from '../../components/ui/NotifyPopup';
 import { IonContent, IonBody, IonButton,IonFooterBar, IonSubHeaderBar, IonSubFooterBar } from 'reactionic';
 //import FooterBar from '../../components/ui/FooterBar';
-import FooterBar from '{followupchat:ui}/components/FooterBar';
+import {UI} from 'meteor/followupchat:ui';
 
 let emitter = new EventEmitter();
 
@@ -117,7 +117,7 @@ export default React.createClass({
                 <div className="keyboard-attach bar-assertive" style={{position: 'fixed', bottom: '0px'}}>
                     <div>Test</div>
                 </div>
-                <FooterBar>testing footerbar</FooterBar>
+                <UI.FooterBar>testing footerbar</UI.FooterBar>
                 <UI.Popup visible={this.state.popup.visible}>
                     <UI.PopupIcon name={this.state.popup.iconName} type={this.state.popup.iconType}
                                   spinning={this.state.popup.loading}/>

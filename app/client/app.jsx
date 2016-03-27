@@ -14,7 +14,7 @@ import Sentry from 'react-sentry';
 
 import LoginView from './views/login/login-view';
 
-
+import './styles/main.import.less';
 
 
 export default React.createClass({
