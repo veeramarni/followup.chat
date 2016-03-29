@@ -1,0 +1,54 @@
+
+/**
+ * Popups
+ * --------------------------------------------------
+ */
+
+.notify.popup-wrapper{
+
+  width: @popup-width + 20px;
+  max-width: 100%;
+  max-height: 90%;
+
+  border-radius: @popup-border-radius;
+  background-color: @popup-background-color;
+
+  display: flex;
+  flex-direction: column;
+
+}
+
+.notify.Popup-dialog {
+  border-radius: 18px;
+  padding: 0px;
+}
+.notify {
+
+  .popup-buttons {
+    border-radius: 0px 0px 18px 18px;
+    padding: 0px;
+    min-height: default;
+  }
+
+  .popup-body {
+    min-height: 80px;
+    overflow: hidden;
+  }
+  .Button {
+    margin-bottom: 0px;
+    margin-top: auto;
+    min-height: 60px;
+    border-radius: inherit;
+  }
+  .left-btn {
+    border-bottom-right-radius: 0;
+    border-right-style: solid;
+    border-right-color: darkgrey;
+    border-width: 1px;
+    font-weight: bold;
+  }
+  .right-btn {
+    border-bottom-left-radius: 0;
+  }
+
+}

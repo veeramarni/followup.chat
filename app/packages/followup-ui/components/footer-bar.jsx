@@ -1,9 +1,10 @@
 import classnames from 'classnames';
 import React from 'react';
 
+import '../styles/less/footer-bar.import.less';
 import 'reactionic/src/ionic-scss/_bar.scss';
 
-var FooterBar = React.createClass({
+export default React.createClass({
     propTypes: {
         customClasses: React.PropTypes.string,
         hasTabs: React.PropTypes.bool
@@ -29,5 +30,3 @@ var FooterBar = React.createClass({
         )
     }
 });
-
-export default FooterBar;

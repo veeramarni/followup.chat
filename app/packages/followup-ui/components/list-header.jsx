@@ -1,5 +1,6 @@
 import classNames from 'classnames';
 import blacklist from 'blacklist';
+import '../styles/less/list-header.import.less';
 
 export  default React.createClass({
     displayName: 'ListHeader',

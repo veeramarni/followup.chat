@@ -1,12 +1,12 @@
 import { Link, UI, Mixins } from 'touchstonejs';
 import Container from 'react-container';
-import NotifyPopup from '../../components/ui/NotifyPopup';
 import { IonContent, IonBody, IonButton,IonFooterBar, IonSubHeaderBar, IonSubFooterBar } from 'reactionic';
-//import FooterBar from '../../components/ui/FooterBar';
-import {UI} from 'meteor/followupchat:ui';
+import  Progress from 'react-css-module-example';
+// To testing sass-resource-loader
+//import 'reactionic/dist/scss/ionic-scss/_bar.scss';
+
 
 let emitter = new EventEmitter();
-
 export default React.createClass({
     mixins: [Mixins.Transitions],
 
@@ -117,16 +117,14 @@ export default React.createClass({
                 <div className="keyboard-attach bar-assertive" style={{position: 'fixed', bottom: '0px'}}>
                     <div>Test</div>
                 </div>
-                <UI.FooterBar>testing footerbar</UI.FooterBar>
+                <Progress/>
                 <UI.Popup visible={this.state.popup.visible}>
                     <UI.PopupIcon name={this.state.popup.iconName} type={this.state.popup.iconType}
                                   spinning={this.state.popup.loading}/>
                     <div><strong>{this.state.popup.header}</strong></div>
                 </UI.Popup>
 
-                <NotifyPopup template="Invalid phone number. Please try again."
-                             visible={this.state.popup.visible} type="alert"
-                             onChange={this.handlePopupChange}/>
+
             </Container>
         )
     }

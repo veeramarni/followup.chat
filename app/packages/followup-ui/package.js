@@ -11,16 +11,19 @@ Package.describe({
 });
 
 Package.onUse(function (api) {
-    api.use( ['ecmascript','modules'] );
+    api.use( ['ecmascript','modules','less'] );
     api.use([
         'webpack:core-config@1.0.0',
         'followupchat:lib',
         'webpack:react',
-        'webpack:sass'
+        'webpack1:sass',
+        'webpack:less',
+        'webpack:css'
     ]);
 
     api.add_files(['webpack.config.js']);
-    api.mainModule('followup-ui-components.js', 'client');
+    api.mainModule('client-components.js', 'client');
 
+    api.addFiles('./styles/components.import.less', 'client');
 });
 
