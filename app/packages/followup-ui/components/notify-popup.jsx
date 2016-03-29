@@ -1,5 +1,6 @@
 import { UI} from 'touchstonejs';
-
+import React from 'react';
+import '../styles/less/notify-popup.import.less';
 
 export default React.createClass({
     displayName: 'NotifyPopup',

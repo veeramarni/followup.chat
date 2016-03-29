@@ -12,14 +12,11 @@ session                 # Client-side reactive dictionary for your app
 jquery                  # Helpful client-side library
 tracker                 # Meteor's client-side reactive programming library
 
-standard-minifiers      # JS/CSS minifiers run for production mode
 es5-shim                # ECMAScript 5 compatibility for older browsers.
 
-fourseven:scss
-momentjs:moment
-veeramarni:accounts-phone
+momentjs:moment@2.11.1
 check
-aldeed:collection2
+aldeed:collection2@2.9.1
 meteorhacks:aggregate
 cfs:standard-packages
 cfs:gridfs
@@ -45,8 +42,9 @@ webpack:webpack
 webpack:react
 webpack:less
 react-runtime
-react-meteor-data
+react-meteor-data@0.2.5
 webpack:assets
-followupchat:ui
-veeramarni:touchstonejs
+webpack1:sass
+standard-minifier-css
+standard-minifier-js
 webpack:sass

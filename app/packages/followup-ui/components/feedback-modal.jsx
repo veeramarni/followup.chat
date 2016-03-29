@@ -3,6 +3,7 @@ import ReactCSSTransitionGroup from 'react-addons-css-transition-group';
 import classNames from 'classnames';
 import Sentry from 'react-sentry';
 
+import  '../styles/less/feedback-modal.import.less';
 
 
 export default React.createClass({
